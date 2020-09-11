@@ -1,12 +1,289 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Магазин Глэйси – онлайн и офлайн-магазин по продаже мороженого собственного производства на развес">
+  <title>Глейси</title>
+</head>
 
-  </body>
+<body>
+  <header class="site-header">
+    <nav class="site-header__nav nav">
+      <a class="site-header__logo-link" href="#">
+        <img class="site-header__logo-img" src="https://via.placeholder.com/154x64" alt="Gllacy Shop" width="154"
+          height="64">
+      </a>
+
+      <ul class="site-header__menu">
+        <li class="site-header__item">
+          <a href="#" class="site-header__link">Каталог</a>
+          <ul class="site-header__sub-menu">
+            <li class="site-header__sub-item">
+              <a href="#" class="site-header__link">Новинки</a>
+            </li>
+            <li class="site-header__sub-item">
+              <a href="#" class="site-header__link">Сливочное</a>
+            </li>
+            <li class="site-header__sub-item">
+              <a href="#" class="site-header__link">Щербеты</a>
+            </li>
+            <li class="site-header__sub-item">
+              <a href="#" class="site-header__link">Фруктовый лед</a>
+            </li>
+            <li class="site-header__sub-item">
+              <a href="#" class="site-header__link">Мелорин</a>
+            </li>
+          </ul>
+        </li>
+        <li class="site-header__item">
+          <a href="#" class="site-header__link">Доставка и оплата</a>
+        </li>
+        <li class="site-header__item">
+          <a href="#" class="site-header__link">О компании</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="site-header__user-menu">
+      <li class="site-header__user-item">
+        <button class="site-header__user-link" type="button" aria-label="Поиск по сайту">Поиск</button>
+        <input class="site-header__search" type="search" placeholder="Крем-брюле">
+      </li>
+      <li class="site-header__user-item">
+        <a href="#" class="site-header__user-link">Вход</a>
+      </li>
+      <li class="site-header__user-item">
+        <a href="#" class="site-header__user-link" aria-label="Корзина">Пусто</a>
+      </li>
+    </ul>
+    <div class="site-header__contacts">
+      <p class="site-header__work-time">с 10 до 20, ежедневно</p>
+      <a class="site-header__phone" href="tel:88124502525">8 812 450-25-25</a>
+    </div>
+  </header>
+  <main class="site-content">
+    <h1 class="site-content__title visually-hidden">Глейси</h1>
+    <section class="section banner">
+      <h2 class="section__title">Специальное предложение</h2>
+      <div class="banner__controls">
+        <input type="radio" class="banner__control visually-hidden" name="banner" value="1" checked>
+        <input type="radio" class="banner__control visually-hidden" name="banner" value="2">
+        <input type="radio" class="banner__control visually-hidden" name="banner" value="3">
+      </div>
+      <ul class="banner__content">
+        <li class="banner__item">
+          <img src="https://via.placeholder.com/644x582" alt="Крем-брюле и пломбир с малиновым джемом"
+            class="banner__img" width="644" height="582">
+          <h3 class="banner__title">Крем-брюле и пломбир с малиновым джемом</h3>
+          <button class="banner__btn" type="button">Давайте оба!</button>
+        </li>
+        <li class="banner__item">
+          <img src="https://via.placeholder.com/644x582" alt="Шоколадный пломбир и лимонный сорбет" class="banner__img"
+            width="644" height="582">
+          <h3 class="banner__title">Шоколадный пломбир и лимонный сорбет</h3>
+          <button class="banner__btn" type="button">Давайте оба!</button>
+        </li>
+        <li class="banner__item">
+          <img src="https://via.placeholder.com/644x582" alt="Пломбир с помадкой и клубничный щербет"
+            class="banner__img" width="644" height="582">
+          <h3 class="banner__title">Пломбир с помадкой и клубничный щербет</h3>
+          <button class="banner__btn" type="button">Давайте оба!</button>
+        </li>
+      </ul>
+    </section>
+    <section class="section additional">
+      <h2 class="section__title visually-hidden">Дополнительно</h2>
+      <ul class="additional__list">
+        <li class="additional__item">
+          <h3 class="additional__title">Малинка даром!</h3>
+          <p class="additional__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
+            малинового варенья бесплатно.</p>
+          <button class="additional__btn" type="button">Хочу варенье!</button>
+        </li>
+        <li class="additional__item">
+          <h3 class="additional__title">Шоколадки даром!</h3>
+          <p class="additional__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
+            присыпки совершенно бесплатно.</p>
+          <button class="additional__btn" type="button">Хочу шоколадки!</button>
+        </li>
+      </ul>
+    </section>
+    <section class="section favorites">
+      <h2 class="favorites__title visually-hidden">Лучшие предложения</h2>
+      <ul class="favorites__list">
+        <li class="favorites__item">
+          <a href="" class="favorites__link">
+            <div class="favorites__label" aria-label="Хит"></div>
+            <img src="https://via.placeholder.com/267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"
+              class="favorites__img" width="267" height="267">
+            <p class="favorite__price">
+              <span class="favorite__value">310</span>
+              <span class="favorite__rub">&#8381;</span>
+              <span class="favorite__kg">/кг</span>
+            </p>
+            <p class="favorite__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          </a>
+        </li>
+        <li class="favorites__item">
+          <a href="" class="favorites__link">
+            <div class="favorites__label" aria-label="Хит"></div>
+            <img src="https://via.placeholder.com/267" alt="Сливочно-кофейное с кусочками шоколада"
+              class="favorites__img" width="267" height="267">
+            <p class="favorite__price">
+              <span class="favorite__value">380</span>
+              <span class="favorite__rub">&#8381;</span>
+              <span class="favorite__kg">/кг</span>
+            </p>
+            <p class="favorite__description">Сливочно-кофейное с кусочками шоколада</p>
+          </a>
+        </li>
+        <li class="favorites__item">
+          <a href="" class="favorites__link">
+            <div class="favorites__label" aria-label="Хит"></div>
+            <img src="https://via.placeholder.com/267" alt="Сливочно-клубничное с присыпкой из белого шоколада"
+              class="favorites__img" width="267" height="267">
+            <p class="favorite__price">
+              <span class="favorite__value">355</span>
+              <span class="favorite__rub">&#8381;</span>
+              <span class="favorite__kg">/кг</span>
+            </p>
+            <p class="favorite__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
+          </a>
+        </li>
+        <li class="favorites__item">
+          <a href="" class="favorites__link">
+            <div class="favorites__label" aria-label="Хит"></div>
+            <img src="https://via.placeholder.com/267" alt="Сливочное крем-брюле с карамельной подливкой "
+              class="favorites__img" width="267" height="267">
+            <p class="favorite__price">
+              <span class="favorite__value">415</span>
+              <span class="favorite__rub">&#8381;</span>
+              <span class="favorite__kg">/кг</span>
+            </p>
+            <p class="favorite__description">Сливочное крем-брюле с карамельной подливкой </p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="section features">
+      <h2 class="section__title visually-hidden">Преимущества</h2>
+      <p class="features__description">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
+        производства на развес</p>
+      <ul class="features__list">
+        <li class="features__item">
+          <p class="features__text">Все наше мороженое изготавливается на собственном производстве, с использованием
+            современного оборудования и проверенных временем технологий.</p>
+        </li>
+        <li class="features__item">
+          <p class="features__text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и
+            компаний, с которыми нас связывает долговременное сотрудничество.</p>
+        </li>
+        <li class="features__item">
+          <p class="features__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего
+            качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+          </p>
+        </li>
+        <li class="features__item">
+          <p class="features__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+            который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="section blog">
+      <h2 class="blog__title visually-hidden">Блог</h2>
+      <p class="blog__text">Новое в нашем блоге</p>
+      <a href="#" class="blog__link">10 способов сервировки фруктовых щербетов  к столу</a>
+    </section>
+    <section class="section subscribe">
+      <h2 class="section__title visually-hidden">Подписаться</h2>
+      <p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что
+        у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+      <form class="subscribe__form" method="post" action="#">
+        <label for="emailField" class="subscribe__label visually-hidden">Поле ввода email</label>
+        <input type="email" class="subscribe__input" placeholder="email@example.com" id="emailField" name="email">
+        <button class="subscribe__btn">Отправить</button>
+        </p>
+    </section>
+    <section class="section contacts">
+      <h2 class="section__title visually-hidden">Контакты</h2>
+      <div class="contacts__map"></div>
+      <address class="contacts__address contacts__top">
+        <p class="contacts__text">Адрес главного офиса и офлайн-магазина:</p>
+        <p class="contacts__value">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
+      </address>
+      <div class="contacts__bottom">
+        <p class="contacts__text">Для заказов по телефону:</p>
+        <p class="contacts__value">8 812 450-25-25</p>
+        <p class="contacts__text">(с 10 до 20 ежедневно)</p>
+      </div>
+      <button class="contacts__btn" type="button">Форма обратной связи</button>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <ul class="site-footer__social-list">
+      <li class="site-footer__social-item">
+        <a href="#" class="site-footer__social-link" aria-label="facebook">facebook</a>
+      </li>
+      <li class="site-footer__social-item">
+        <a href="#" class="site-footer__social-link" aria-label="vkontacte">vkontacte</a>
+      </li>
+      <li class="site-footer__social-item">
+        <a href="#" class="site-footer__social-link" aria-label="instagram">instagram</a>
+      </li>
+      <li class="site-footer__social-item">
+        <a href="#" class="site-footer__social-link" aria-label="twitter">twitter</a>
+      </li>
+    </ul>
+    <ul class="page-footer__menu">
+      <li class="page-footer__item">
+        <a href="#" class="page-footer__link">Для поставщиков</a>
+      </li>
+      <li class="page-footer__item">
+        <a href="#" class="page-footer__link">О производстве</a>
+      </li>
+      <li class="page-footer__item">
+        <a href="#" class="page-footer__link">Наши документы</a>
+      </li>
+      <li class="page-footer__item">
+        <a href="#" class="page-footer__link">Экологические стандарты</a>
+      </li>
+    </ul>
+    <div class="page-footer__copy">
+      <a href="#" class="page-footer__dev" aria-label="html academy">html academy</a>
+      <p class="page-footer__text">Сделано в HTML Academy &copy; 2019</p>
+    </div>
+  </footer>
+
+  <div class="login">
+    <h2 class="visually-hidden">Форма входа</h2>
+    <form action="#" class="login__form" method="post">
+      <label for="loginEmail" class="visually-hidden">Email</label>
+      <input type="email" class="login__input" name="userEmail" id="loginEmail" placeholder="email@example.com">
+      <label for="loginPassword" class="visually-hidden">Пароль</label>
+      <input type="email" class="login__input" name="userPassword" id="loginPassword" placeholder="......">
+      <button class="login__btn" type="submit">Войти</button>
+      <a class="logion__forgot" href="#">Забыли пароль?</a>
+      <a class="login__sign-up" href="#">Новая регистрация</a>
+    </form>
+  </div>
+
+  <div class="message">
+    <button class="message__close" type="button" aria-label="Закрыть">Закрыть</button>
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <p class="message__title">Мы обязательно вам ответим!</p>
+    <form action="#" class="message__form" method="post">
+      <label for="nameField" class="visually-hidden">Имя Фамилия</label>
+      <input type="text" class="message__input" placeholder="Имя Фамилия" id="nameField">
+      <label for="messageEmail" class="visually-hidden">Email</label>
+      <input type="email" class="message__input" name="userEmail" id="messageEmail" placeholder="email@example.com">
+      <textarea class="message__text" name="messageText" id="msgText" cols="30" rows="10"
+        placeholder="В свободной форме"></textarea>
+      <button class="message__btn" type="submit">Отправить</button>
+    </form>
+  </div>
+</body>
+
 </html>
